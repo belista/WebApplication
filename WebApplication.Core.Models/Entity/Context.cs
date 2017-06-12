@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 
 namespace WebApplication.Core.Models.Entity
 {
@@ -9,12 +8,12 @@ namespace WebApplication.Core.Models.Entity
         {
             Groups = new List<Group>
             {
-                new Group("Some group")
+                new Group(1, "Some group")
             };
 
             Users = new List<User>
             {
-                new User("Артём Шиленко", 18, "shilenko.at@mail.ru", "donthateme", Groups.First())
+                new User(1, "Артём Шиленко", 18, "shilenko.at@mail.ru", "donthateme")
             };
         }
         

@@ -8,6 +8,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using WebApplication.Core.Models.Entity;
+using WebApplication.Core.Services.DataProvider.Interfaces;
+using WebApplication.Core.Services.DataProvider.Placeholders;
 
 namespace WebApplication
 {
@@ -31,6 +33,8 @@ namespace WebApplication
             // Add framework services.
             services
                 .AddSingleton(typeof(Context))
+                .AddTransient(typeof(IUserService), typeof(UserServicePlaceholder))
+                .AddTransient(typeof(IGroupService), typeof(GroupServicePlaceholder))
                 .AddMvc();
         }
 
