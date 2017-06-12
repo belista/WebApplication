@@ -5,11 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WebApplication.Core.Models\WebApplication.Core.Models.csproj" />
+    <None Include="DataProvider\Interfaces\IUserService.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DataProvider\Interfaces\" />
+    <ProjectReference Include="..\WebApplication.Core.Models\WebApplication.Core.Models.csproj" />
   </ItemGroup>
 
 </Project>

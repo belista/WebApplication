@@ -6,14 +6,20 @@
     public class User
     {
 
-        public User(string name, int age, string email, string pass, Group group = null)
+        public User(int id, string name, int age, string email, string pass, int? groupId = null)
         {
+            Id = id; 
             Name = name;
             Age = age;
             Email = email;
             Password = pass;
-            Group = group; 
+            GroupId = groupId; 
         }
+
+        /// <summary>
+        /// Айди пользователя. 
+        /// </summary>
+        public int Id { get; private set; }
 
         /// <summary>
         /// Имя. 
@@ -36,8 +42,8 @@
         public string Password { get; private set; }
 
         /// <summary>
-        /// Группа пользователя. 
+        /// Id группы пользователя. 
         /// </summary>
-        Group Group { get; set; }
+        public int? GroupId { get; set; }
     }
 }
