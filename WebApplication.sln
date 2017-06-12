@@ -5,6 +5,12 @@ VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{5AA3176D-9735-46F3-AA79-FB30C2347460}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication.Core.Models", "WebApplication.Core.Models\WebApplication.Core.Models.csproj", "{230C7754-5B41-4459-B1A5-3A2BC503E46B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApplication.Core", "WebApplication.Core", "{FFFB9D8B-7D95-4EDB-AB01-9F59A0CB23EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication.Core.Services", "WebApplication.Core.Services\WebApplication.Core.Services.csproj", "{E577B50F-85CD-41BA-9D76-8B45EB89004E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +21,20 @@ Global
 		{5AA3176D-9735-46F3-AA79-FB30C2347460}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AA3176D-9735-46F3-AA79-FB30C2347460}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AA3176D-9735-46F3-AA79-FB30C2347460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{230C7754-5B41-4459-B1A5-3A2BC503E46B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{230C7754-5B41-4459-B1A5-3A2BC503E46B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{230C7754-5B41-4459-B1A5-3A2BC503E46B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{230C7754-5B41-4459-B1A5-3A2BC503E46B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E577B50F-85CD-41BA-9D76-8B45EB89004E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E577B50F-85CD-41BA-9D76-8B45EB89004E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E577B50F-85CD-41BA-9D76-8B45EB89004E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E577B50F-85CD-41BA-9D76-8B45EB89004E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{230C7754-5B41-4459-B1A5-3A2BC503E46B} = {FFFB9D8B-7D95-4EDB-AB01-9F59A0CB23EB}
+		{E577B50F-85CD-41BA-9D76-8B45EB89004E} = {FFFB9D8B-7D95-4EDB-AB01-9F59A0CB23EB}
 	EndGlobalSection
 EndGlobal
